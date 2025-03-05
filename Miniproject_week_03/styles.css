@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.sidebar {
+    width: 250px;
+    background: #222;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    margin-left: 20px;
+    padding: 60px 20px;
+    flex: 1;
+}
+section {
+    margin: 50px 0;
+}
+.show-sidebar {
+    left: 0;
+}
